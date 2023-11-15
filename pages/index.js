@@ -3,6 +3,10 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   // Sample league data with player names, factions, and all numeric values set to 0
+  const fetch = require("node-fetch");
+
+  var myHeaders = new fetch.Headers();
+  
   const leagueData = [
     { nombre: 'JOSEMA', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
     { nombre: 'FERNANDO', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
