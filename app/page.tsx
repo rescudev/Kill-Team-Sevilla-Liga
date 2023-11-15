@@ -65,7 +65,7 @@ export default function Home() {
                 <th style={tableHeaderStyles}>Nombre</th>
                 <th style={tableHeaderStyles}>Facción</th>
                 <th style={tableHeaderStyles}>J</th>
-                <th style={tableHeaderStyles}>V</th>
+                <th style={tableHeaderStyles}>G</th>
                 <th style={tableHeaderStyles}>E</th>
                 <th style={tableHeaderStyles}>D</th>
                 <th style={tableHeaderStyles}>PTS</th>
@@ -76,7 +76,7 @@ export default function Home() {
                 <tr key={index} style={{ backgroundColor: index % 2 === 1 ? '#666' : 'transparent' }}>
                   <td style={tableCellStyles}>{index + 1}</td>
                   <td style={tableCellStyles}>{player.nombre}</td>
-                  <td style={tableCellStyles}>{player.faccion}</td>
+                  <td style={{ ...tableCellStyles, whiteSpace: 'normal' }}>{player.faccion}</td>
                   <td style={tableCellStyles}>{player.jugadas}</td>
                   <td style={tableCellStyles}>{player.victorias}</td>
                   <td style={tableCellStyles}>{player.empates}</td>
