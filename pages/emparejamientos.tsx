@@ -59,7 +59,7 @@ export default function Emparejamientos() {
   const pairingsChunksJornada3 = chunkArray(pairingsJornada3, 2);
 
   // Function to render the pairing table with centered images
-const renderPairingTable = (pairings: Pairing[], groupIndex: number, mapImage: string) => (
+const renderPairingTable = (pairings: Pairing[], groupIndex: number) => (
   <div key={groupIndex} style={{ width: '48%', marginBottom: '20px' }}>
     {pairings.map((pairing, index) => (
       <div key={index} style={{ textAlign: 'center', marginBottom: '20px' }}>
@@ -83,13 +83,6 @@ const renderPairingTable = (pairings: Pairing[], groupIndex: number, mapImage: s
             </tr>
           </tbody>
         </table>
-        {mapImage && (
-          <div style={{ textAlign: 'center', marginTop: '20px' }}>
-            <h3 style={{ margin: '15px 0', backgroundColor: '#555', color: 'white', padding: '8px', borderRadius: '10px' }}>Mapa:</h3>
-            <img src={mapImage} alt={`Mapa Jornada ${groupIndex + 1}`} style={{ width: '200px', height: '200px', borderRadius: '10px' }} />
-            <h3 style={{ margin: '15px 0', backgroundColor: '#555', color: 'white', padding: '8px', borderRadius: '10px' }}>Misión: C</h3>
-          </div>
-        )}
       </div>
     ))}
   </div>
