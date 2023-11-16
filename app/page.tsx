@@ -113,7 +113,7 @@ export default function Home() {
         </div>
       </div>
         {/* Add buttons with equal spacing */}
-        <div style={{ display: 'flex', justifyContent: 'space-evenly', margin: '20px' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', margin: '20px 0' }}>
           <Link href="/mapas">
             <button style={{
               padding: '10px 20px',
@@ -143,6 +143,7 @@ export default function Home() {
             </button>
           </Link>
         </div>
+        <br/>
     </div>
   );
 }
