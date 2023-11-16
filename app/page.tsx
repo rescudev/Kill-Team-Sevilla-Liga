@@ -27,22 +27,22 @@ const tableCellStyles: React.CSSProperties = {
 
 export default function Home() {
   const leagueData: Player[] = [
-    { nombre: 'JOSEMA', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-    { nombre: 'FERNANDO', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-    { nombre: 'KRIS', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-    { nombre: 'JESÚS', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-    { nombre: 'JUANJO', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-    { nombre: 'JUDIT', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-    { nombre: 'LUCAS', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-    { nombre: 'LUISMI', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-    { nombre: 'RAFA M', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-	{ nombre: 'ALFONSO', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-    { nombre: 'RAFA E', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-	{ nombre: 'ANTONIO', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-    { nombre: 'KAKE', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-    { nombre: 'MIGUEL', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-    { nombre: 'PEDRO', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
-    { nombre: 'IVÁN', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
+    { nombre: 'JOSEMA', faccion: 'NAVY', jugadas:2, victorias: 0, empates: 0, derrotas: 2, puntos: 31 },
+    { nombre: 'FERNANDO', faccion: 'PHOBOS', jugadas: 1, victorias: 1, empates: 0, derrotas: 0, puntos: 18 },
+    { nombre: 'KRYS', faccion: 'GUARDIA VETERANA', jugadas: 2, victorias: 2, empates: 0, derrotas: 0, puntos: 35 },
+    { nombre: 'JESÚS', faccion: 'LEGIONARIOS', jugadas: 1, victorias: 0, empates: 0, derrotas: 1, puntos: 12 },
+    { nombre: 'JUANJO', faccion: 'CULTO DEL CAOS', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
+    { nombre: 'JUDIT', faccion: 'DRUKHARI', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
+    { nombre: 'LUCAS', faccion: 'CLADO DE CAZADORES', jugadas: 1, victorias: 1, empates: 0, derrotas: 0, puntos: 17 },
+    { nombre: 'LUISMI', faccion: 'GELLERPOX', jugadas: 2, victorias: 0, empates: 0, derrotas: 2, puntos: 19 },
+    { nombre: 'RAFA M', faccion: 'PATHFINDER', jugadas: 1, victorias: 1, empates: 0, derrotas: 0, puntos: 18 },
+    { nombre: 'RAFA E', faccion: 'ORKOMANDOS', jugadas: 1, victorias: 1, empates: 0, derrotas: 0, puntos: 14 },
+    { nombre: 'JAVI', faccion: 'GUARDIA VETERANA', jugadas: 1, victorias: 1, empates: 0, derrotas: 1, puntos: 18 },
+    { nombre: 'MIGUEL', faccion: 'PATHFINDER', jugadas: 1, victorias: 0, empates: 0, derrotas: 1, puntos: 11 },
+    { nombre: 'PEDRO', faccion: 'INTERCESORES', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
+    { nombre: 'IVÁN', faccion: 'GUARDIA VETERANA', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
+    { nombre: 'ANTONIO', faccion: 'LEGIONARIOS', jugadas: 1, victorias: 0, empates: 0, derrotas: 1, puntos: 11 },
+    { nombre: 'ALFONSO', faccion: 'LEGIONARIOS', jugadas: 2, victorias: 1, empates: 0, derrotas: 1, puntos: 31 },
   ];
 
   const sortedLeagueData = [...leagueData].sort((a, b) => {
@@ -52,7 +52,10 @@ export default function Home() {
     if (b.empates !== a.empates) {
       return b.empates - a.empates;
     }
-    return b.empates - a.empates;
+    if (b.jugadas !== a.jugadas) {
+      return b.jugadas - a.jugadas;
+    }
+    return b.puntos - a.puntos;
   });
 
   return (
@@ -112,7 +115,7 @@ export default function Home() {
                 <tr key={index} style={{ backgroundColor: index % 2 === 1 ? '#666' : 'transparent', borderRadius: '10px' }}>
                   <td style={tableCellStyles}>{index + 1}</td>
                   <td style={tableCellStyles}>{player.nombre}</td>
-                  <td style={{ ...tableCellStyles, whiteSpace: 'normal' }}>{player.faccion}</td>
+                  <td style={{ ...tableCellStyles, whiteSpace: 'normal', fontSize: '10px' }}>{player.faccion}</td>
                   <td style={tableCellStyles}>{player.jugadas}</td>
                   <td style={tableCellStyles}>{player.victorias}</td>
                   <td style={tableCellStyles}>{player.empates}</td>
@@ -126,24 +129,24 @@ export default function Home() {
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
         </div>
       </div>
-        {/* Add buttons with equal spacing */}
-        <div style={{ display: 'flex', justifyContent: 'space-evenly', margin: '20px 0' }}>
-          {/* Second button */}
-          <Link href="/emparejamientos">
-            <button style={{
-              padding: '10px 20px',
-              borderRadius: '5px',
-              background: 'linear-gradient(135deg, #02514E, #029B8B)',
-              color: 'white',
-              border: 'none',
-              cursor: 'pointer',
-              transition: 'background 0.3s',
-            }}>
-              Emparejamientos
-            </button>
-          </Link>
-        </div>
-        <br/>
+      {/* Add buttons with equal spacing */}
+      <div style={{ display: 'flex', justifyContent: 'space-evenly', margin: '20px 0' }}>
+        {/* Second button */}
+        <Link href="/emparejamientos">
+          <button style={{
+            padding: '10px 20px',
+            borderRadius: '5px',
+            background: 'linear-gradient(135deg, #02514E, #029B8B)',
+            color: 'white',
+            border: 'none',
+            cursor: 'pointer',
+            transition: 'background 0.3s',
+          }}>
+            Emparejamientos
+          </button>
+        </Link>
+      </div>
+      <br/>
     </div>
   );
 }
