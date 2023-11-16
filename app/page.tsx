@@ -11,6 +11,20 @@ interface Player {
   puntos: number;
 }
 
+const tableHeaderStyles: React.CSSProperties = {
+  padding: '8px',
+  textAlign: 'center',
+  whiteSpace: 'nowrap',
+  borderBottom: '1px solid #444',
+};
+
+const tableCellStyles: React.CSSProperties = {
+  ...tableHeaderStyles,
+  textAlign: 'center',
+  wordBreak: 'break-word',
+  borderBottom: '1px solid #444',
+};
+
 export default function Home() {
   const leagueData: Player[] = [
     { nombre: 'JOSEMA', faccion: 'Space Marines', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
@@ -114,20 +128,6 @@ export default function Home() {
       </div>
         {/* Add buttons with equal spacing */}
         <div style={{ display: 'flex', justifyContent: 'space-evenly', margin: '20px 0' }}>
-          <Link href="/mapas">
-            <button style={{
-              padding: '10px 20px',
-              borderRadius: '5px',
-              background: 'linear-gradient(135deg, #02514E, #029B8B)',
-              color: 'white',
-              border: 'none',
-              cursor: 'pointer',
-              transition: 'background 0.3s',
-            }}>
-              Mapas
-            </button>
-          </Link>
-
           {/* Second button */}
           <Link href="/emparejamientos">
             <button style={{
@@ -147,17 +147,3 @@ export default function Home() {
     </div>
   );
 }
-
-const tableHeaderStyles: React.CSSProperties = {
-  padding: '8px',
-  textAlign: 'center',
-  whiteSpace: 'nowrap',
-  borderBottom: '1px solid #444',
-};
-
-const tableCellStyles: React.CSSProperties = {
-  ...tableHeaderStyles,
-  textAlign: 'center',
-  wordBreak: 'break-word',
-  borderBottom: '1px solid #444',
-};
