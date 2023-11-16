@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 interface Player {
   nombre: string;
@@ -108,7 +109,40 @@ export default function Home() {
             </tbody>
           </table>
         </div>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+        </div>
       </div>
+        {/* Add buttons with equal spacing */}
+        <div style={{ display: 'flex', justifyContent: 'space-evenly', margin: '20px' }}>
+          <Link href="/mapas">
+            <button style={{
+              padding: '10px 20px',
+              borderRadius: '5px',
+              background: 'linear-gradient(135deg, #02514E, #029B8B)',
+              color: 'white',
+              border: 'none',
+              cursor: 'pointer',
+              transition: 'background 0.3s',
+            }}>
+              Mapas
+            </button>
+          </Link>
+
+          {/* Second button */}
+          <Link href="/emparejamientos">
+            <button style={{
+              padding: '10px 20px',
+              borderRadius: '5px',
+              background: 'linear-gradient(135deg, #02514E, #029B8B)',
+              color: 'white',
+              border: 'none',
+              cursor: 'pointer',
+              transition: 'background 0.3s',
+            }}>
+              Emparejamientos
+            </button>
+          </Link>
+        </div>
     </div>
   );
 }
