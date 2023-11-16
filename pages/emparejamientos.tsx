@@ -7,8 +7,8 @@ import Link from 'next/link';
 interface Pairing {
   jugador1: string;
   jugador2: string;
-  punto1: number;
-  punto2: number;
+  puntos1: number;
+  puntos2: number;
   resultado: number;
 }
 
