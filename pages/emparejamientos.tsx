@@ -27,7 +27,7 @@ const pairingsJornada1: Pairing[] = [
 const pairingsJornada2: Pairing[] = [
   { jugador1: 'JOSEMA', jugador2: 'KRYS', puntos1: 16, puntos2: 17, resultado: 2 },
   { jugador1: 'FERNANDO', jugador2: 'JESÚS', puntos1: 0, puntos2: 0, resultado: 0 },
-  { jugador1: 'JUANJO', jugador2: 'LUCAS', puntos1: 0, puntos2: 0, resultado: 0 },
+  { jugador1: 'JUANJO', jugador2: 'LUCAS', puntos1: 9, puntos2: 21, resultado: 2 },
   { jugador1: 'JUDIT', jugador2: 'RAFA M', puntos1: 0, puntos2: 0, resultado: 0 },
   { jugador1: 'LUISMI', jugador2: 'ALFONSO', puntos1: 6, puntos2: 21, resultado: 2 },
   { jugador1: 'ANTONIO', jugador2: 'JAVI', puntos1: 0, puntos2: 0, resultado: 0 },
