@@ -51,7 +51,7 @@ export default function Home() {
         {/* The Kill Team League Table */}
         <div style={{ position: 'relative', marginBottom: '20px' }}>
           <img
-            src="/kt.png"  // Make sure this path matches the actual location of your image in the public folder
+            src="/kt.PNG"  // Make sure this path matches the actual location of your image in the public folder
             alt="Kill Team Logo"
             style={{
               position: 'absolute',
