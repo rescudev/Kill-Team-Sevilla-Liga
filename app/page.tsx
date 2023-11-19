@@ -28,9 +28,9 @@ const tableCellStyles: React.CSSProperties = {
 export default function Home() {
   const leagueData: Player[] = [
     { nombre: 'JOSEMA', faccion: 'NAVY', jugadas:2, victorias: 0, empates: 0, derrotas: 2, puntos: 31 },
-    { nombre: 'FERNANDO', faccion: 'PHOBOS', jugadas: 1, victorias: 1, empates: 0, derrotas: 0, puntos: 18 },
+    { nombre: 'FERNANDO', faccion: 'PHOBOS', jugadas: 2, victorias: 2, empates: 0, derrotas: 0, puntos: 34 },
     { nombre: 'KRYS', faccion: 'GUARDIA VETERANA', jugadas: 2, victorias: 2, empates: 0, derrotas: 0, puntos: 35 },
-    { nombre: 'JESÚS', faccion: 'LEGIONARIOS', jugadas: 1, victorias: 0, empates: 0, derrotas: 1, puntos: 12 },
+    { nombre: 'JESÚS', faccion: 'LEGIONARIOS', jugadas: 2, victorias: 0, empates: 0, derrotas: 2, puntos: 26 },
     { nombre: 'JUANJO', faccion: 'CULTO DEL CAOS', jugadas: 1, victorias: 0, empates: 0, derrotas: 1, puntos: 9 },
     { nombre: 'JUDIT', faccion: 'DRUKHARI', jugadas: 0, victorias: 0, empates: 0, derrotas: 0, puntos: 0 },
     { nombre: 'LUCAS', faccion: 'CLADO DE CAZADORES', jugadas: 2, victorias: 2, empates: 0, derrotas: 0, puntos: 38 },
