@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { jornada1, jornada2, jornada3 } from '../app/data';
 
 interface Pairing {
   jugador1: string;
@@ -10,43 +11,6 @@ interface Pairing {
   puntos1: number;
   puntos2: number;
 }
-
-// Jornada 1
-const pairingsJornada1: Pairing[] = [
-  { jugador1: 'JOSEMA', jugador2: 'FERNANDO', puntos1: 15, puntos2: 18 },
-  { jugador1: 'KRYS', jugador2: 'JESÚS', puntos1: 18, puntos2: 12 },
-  { jugador1: 'JUANJO', jugador2: 'JUDIT', puntos1: 0, puntos2: 0 },
-  { jugador1: 'LUCAS', jugador2: 'LUISMI', puntos1: 17, puntos2: 13 },
-  { jugador1: 'RAFA M', jugador2: 'ANTONIO', puntos1: 18, puntos2: 11 },
-  { jugador1: 'ALFONSO', jugador2: 'RAFA E', puntos1: 10, puntos2: 14 },
-  { jugador1: 'JAVI', jugador2: 'MIGUEL', puntos1: 18, puntos2: 11 },
-  { jugador1: 'PEDRO', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
-  // ... (repeat for other pairings)
-];
-
-// Jornada 2
-const pairingsJornada2: Pairing[] = [
-  { jugador1: 'JOSEMA', jugador2: 'KRYS', puntos1: 16, puntos2: 17 },
-  { jugador1: 'FERNANDO', jugador2: 'JESÚS', puntos1: 16, puntos2: 14 },
-  { jugador1: 'JUANJO', jugador2: 'LUCAS', puntos1: 9, puntos2: 21 },
-  { jugador1: 'JUDIT', jugador2: 'RAFA M', puntos1: 0, puntos2: 0 },
-  { jugador1: 'LUISMI', jugador2: 'ALFONSO', puntos1: 6, puntos2: 21 },
-  { jugador1: 'ANTONIO', jugador2: 'JAVI', puntos1: 0, puntos2: 0 },
-  { jugador1: 'RAFA E', jugador2: 'PEDRO', puntos1: 18, puntos2: 14 },
-  { jugador1: 'MIGUEL', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
-];
-
-// Jornada 3
-const pairingsJornada3: Pairing[] = [
-  { jugador1: 'JOSEMA', jugador2: 'JUANJO', puntos1: 0, puntos2: 0 },
-  { jugador1: 'KRYS', jugador2: 'LUCAS', puntos1: 0, puntos2: 0 },
-  { jugador1: 'FERNANDO', jugador2: 'JUDIT', puntos1: 0, puntos2: 0 },
-  { jugador1: 'JESÚS', jugador2: 'LUISMI', puntos1: 0, puntos2: 0 },
-  { jugador1: 'RAFA M', jugador2: 'RAFA E', puntos1: 0, puntos2: 0 },
-  { jugador1: 'ANTONIO', jugador2: 'PEDRO', puntos1: 0, puntos2: 0 },
-  { jugador1: 'ALFONSO', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
-  { jugador1: 'JAVI', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
-];
 
 export default function Emparejamientos() {
   const [jornada1Visible, setJornada1Visible] = useState(false);
@@ -56,9 +20,9 @@ export default function Emparejamientos() {
   const chunkArray = (array: any[], size: number) =>
     Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
 
-  const pairingsChunksJornada1 = chunkArray(pairingsJornada1, 2);
-  const pairingsChunksJornada2 = chunkArray(pairingsJornada2, 2);
-  const pairingsChunksJornada3 = chunkArray(pairingsJornada3, 2);
+  const pairingsChunksJornada1 = chunkArray(jornada1, 2);
+  const pairingsChunksJornada2 = chunkArray(jornada2, 2);
+  const pairingsChunksJornada3 = chunkArray(jornada3, 2);
 
   // Function to render the pairing table with centered images
 const renderPairingTable = (pairings: Pairing[], groupIndex: number) => (
