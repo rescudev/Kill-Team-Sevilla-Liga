@@ -32,7 +32,7 @@ const pairingsJornada2: Pairing[] = [
   { jugador1: 'JUDIT', jugador2: 'RAFA M', puntos1: 0, puntos2: 0 },
   { jugador1: 'LUISMI', jugador2: 'ALFONSO', puntos1: 6, puntos2: 21 },
   { jugador1: 'ANTONIO', jugador2: 'JAVI', puntos1: 0, puntos2: 0 },
-  { jugador1: 'RAFA E', jugador2: 'PEDRO', puntos1: 0, puntos2: 0 },
+  { jugador1: 'RAFA E', jugador2: 'PEDRO', puntos1: 18, puntos2: 14 },
   { jugador1: 'MIGUEL', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
 ];
 
