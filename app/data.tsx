@@ -10,14 +10,14 @@ interface Pairing {
 function calculatePoints(jornadas: Pairing[][]): any {
   // Hardcoded player names and factions
   const playerFactions: { [player: string]: string } = {
-    'JOSEMA': 'NAVY', 
+    'JOSEMA': 'CUSTODES', 
     'FERNANDO': 'PHOBOS', 
-    'KRYS': 'GUARDIA VETERANA',
-    'JESÚS': 'LEGIONARIOS', 
+    'KRYS': 'BLOODED',
+    'JESÚS': 'ORKOMANDOS', 
     'JUANJO': 'CULTO DEL CAOS', 
     'JUDIT': 'DRUKHARI',
-    'LUCAS': 'CLADO DE CAZADORES', 
-    'LUISMI': 'GELLERPOX', 
+    'LUCAS': 'CULTO DEL CAOS', 
+    'LUISMI': 'NECRONES', 
     'RAFA M': 'PATHFINDER',
     'RAFA E': 'ORKOMANDOS', 
     'JAVI': 'GUARDIA VETERANA', 
@@ -99,24 +99,63 @@ const jornada2 = [
 const jornada3 = [
   { jugador1: 'JOSEMA', jugador2: 'JUANJO', puntos1: 0, puntos2: 0 },
   { jugador1: 'KRYS', jugador2: 'LUCAS', puntos1: 13, puntos2: 19 },
-  { jugador1: 'FERNANDO', jugador2: 'JUDIT', puntos1: 0, puntos2: 0 },
+  { jugador1: 'FERNANDO', jugador2: 'JUDIT', puntos1: 16, puntos2: 12 },
   { jugador1: 'JESÚS', jugador2: 'LUISMI', puntos1: 0, puntos2: 0 },
-  { jugador1: 'RAFA M', jugador2: 'RAFA E', puntos1: 0, puntos2: 0 },
+  { jugador1: 'RAFA M', jugador2: 'RAFA E', puntos1: 20, puntos2: 11 },
   { jugador1: 'ANTONIO', jugador2: 'PEDRO', puntos1: 0, puntos2: 0 },
   { jugador1: 'ALFONSO', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
   { jugador1: 'JAVI', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
+];
+
+const jornada4 = [
+  { jugador1: 'JOSEMA', jugador2: 'ANTONIO', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JUDIT', jugador2: 'JAVI', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JUANJO', jugador2: 'LUISMI', puntos1: 0, puntos2: 0 },
+  { jugador1: 'KRYS', jugador2: 'RAFA E', puntos1: 0, puntos2: 0 },
+  { jugador1: 'LUCAS', jugador2: 'PEDRO', puntos1: 0, puntos2: 0 },
+  { jugador1: 'FERNANDO', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JESÚS', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
+  { jugador1: 'RAFA M', jugador2: 'ALFONSO', puntos1: 0, puntos2: 0 },
+];
+
+const jornada5 = [
+  { jugador1: 'JOSEMA', jugador2: 'LUCAS', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JUDIT', jugador2: 'PEDRO', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JUANJO', jugador2: 'RAFA E', puntos1: 0, puntos2: 0 },
+  { jugador1: 'LUISMI', jugador2: 'RAFA M', puntos1: 0, puntos2: 0 },
+  { jugador1: 'KRYS', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
+  { jugador1: 'FERNANDO', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JESÚS', jugador2: 'JAVI', puntos1: 0, puntos2: 0 },
+  { jugador1: 'ALFONSO', jugador2: 'ANTONIO', puntos1: 0, puntos2: 0 },
+];
+
+const jornada6 = [
+  { jugador1: 'JOSEMA', jugador2: 'LUISMI', puntos1: 0, puntos2: 0 },
+  { jugador1: 'LUCAS', jugador2: 'JUDIT', puntos1: 0, puntos2: 0 },
+  { jugador1: 'RAFA M', jugador2: 'PEDRO', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JUANJO', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
+  { jugador1: 'KRYS', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
+  { jugador1: 'FERNANDO', jugador2: 'JAVI', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JESÚS', jugador2: 'ALFONSO', puntos1: 0, puntos2: 0 },
+  { jugador1: 'RAFA E', jugador2: 'ANTONIO', puntos1: 0, puntos2: 0 },
 ];
 
 // Example usage for multiple jornadas
 const leagueData = calculatePoints([
   jornada1,
   jornada2,
-  jornada3
+  jornada3,
+  jornada4,
+  jornada5,
+  jornada6
 ]);
 
 export {
   jornada1,
   jornada2,
   jornada3,
+  jornada4,
+  jornada5,
+  jornada6,
   leagueData
 };
