@@ -125,12 +125,12 @@ const jornada5 = [
   { jugador1: 'LUISMI', jugador2: 'RAFA M', puntos1: 0, puntos2: 0 },
   { jugador1: 'KRYS', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
   { jugador1: 'FERNANDO', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
-  { jugador1: 'JESÚS', jugador2: 'JAVI', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JESÚS', jugador2: 'JAVI', puntos1: 19, puntos2: 11 },
   { jugador1: 'ALFONSO', jugador2: 'ANTONIO', puntos1: 0, puntos2: 0 },
 ];
 
 const jornada6 = [
-  { jugador1: 'JOSEMA', jugador2: 'LUISMI', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JOSEMA', jugador2: 'LUISMI', puntos1: 19, puntos2: 13 },
   { jugador1: 'LUCAS', jugador2: 'JUDIT', puntos1: 0, puntos2: 0 },
   { jugador1: 'RAFA M', jugador2: 'PEDRO', puntos1: 0, puntos2: 0 },
   { jugador1: 'JUANJO', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
