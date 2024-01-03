@@ -2,16 +2,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { leagueData, jornada1, jornada2, jornada3 } from './data';
 
-interface Player {
-  nombre: string;
-  faccion: string;
-  jugadas: number;
-  victorias: number;
-  empates: number;
-  derrotas: number;
-  puntos: number;
-}
-
 const tableHeaderStyles: React.CSSProperties = {
   padding: '8px',
   textAlign: 'center',

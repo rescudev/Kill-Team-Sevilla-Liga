@@ -10,16 +10,16 @@ interface Pairing {
 function calculatePoints(jornadas: Pairing[][]): any {
   // Hardcoded player names and factions
   const playerFactions: { [player: string]: string } = {
-    'JOSEMA': 'CUSTODES', 
-    'FERNANDO': 'PHOBOS', 
+    'JOSEMA': 'SCOUTS',
+    'FERNANDO': 'KARSKINS', 
     'KRYS': 'BLOODED',
-    'JESÚS': 'ORKOMANDOS', 
+    'JESÚS': 'ARBITRES', 
     'JUANJO': 'CULTO DEL CAOS', 
     'JUDIT': 'DRUKHARI',
-    'LUCAS': 'CULTO DEL CAOS', 
-    'LUISMI': 'NECRONES', 
+    'LUCAS': 'PATHFINDER', 
+    'LUISMI': 'KARSKINS', 
     'RAFA M': 'PATHFINDER',
-    'RAFA E': 'ORKOMANDOS', 
+    'RAFA E': 'ELUCIDIAN', 
     'JAVI': 'GUARDIA VETERANA', 
     'MIGUEL': 'PATHFINDER',
     'PEDRO': 'INTERCESORES', 
