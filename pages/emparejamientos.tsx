@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { jornada1, jornada2, jornada3, jornada4, jornada5, jornada6 } from '../app/data';
+import { jornada1, jornada2, jornada3, jornada4, jornada5, jornada6, jornada7, jornada8, jornada9 } from '../app/data';
 
 interface Pairing {
   jugador1: string;
@@ -19,6 +19,9 @@ export default function Emparejamientos() {
   const [jornada4Visible, setJornada4Visible] = useState(false);
   const [jornada5Visible, setJornada5Visible] = useState(false);
   const [jornada6Visible, setJornada6Visible] = useState(false);
+  const [jornada7Visible, setJornada7Visible] = useState(false);
+  const [jornada8Visible, setJornada8Visible] = useState(false);
+  const [jornada9Visible, setJornada9Visible] = useState(false);
 
   const chunkArray = (array: any[], size: number) =>
     Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
@@ -29,6 +32,9 @@ export default function Emparejamientos() {
   const pairingsChunksJornada4 = chunkArray(jornada4, 2);
   const pairingsChunksJornada5 = chunkArray(jornada5, 2);
   const pairingsChunksJornada6 = chunkArray(jornada6, 2);
+  const pairingsChunksJornada7 = chunkArray(jornada7, 2);
+  const pairingsChunksJornada8 = chunkArray(jornada8, 2);
+  const pairingsChunksJornada9 = chunkArray(jornada9, 2);
 
   // Function to render the pairing table with centered images
 const renderPairingTable = (pairings: Pairing[], groupIndex: number) => (
@@ -109,6 +115,70 @@ const renderPairingTable = (pairings: Pairing[], groupIndex: number) => (
         </div>
         <div style={{ position: 'relative', marginBottom: '60px' }}>
           <h2 style={{ textAlign: 'center', margin: '15px 0 30px 0' }}>Emparejamientos</h2>
+        </div>
+
+        <div style={{ marginBottom: '20px' }}>
+          <h3
+            style={{ textAlign: 'center', margin: '30px 0', cursor: 'pointer', backgroundColor: '#777', color: 'white', padding: '8px', borderRadius: '10px' }}
+            onClick={() => setJornada9Visible(!jornada9Visible)}
+          >
+            Jornada 9 {jornada9Visible ? '▼' : '►'}
+          </h3>
+          {jornada9Visible && (
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+              {pairingsChunksJornada9.map((pairingsGroup, groupIndex) => (
+                renderPairingTable(pairingsGroup, groupIndex)
+              ))}
+            </div>
+          )}
+          {jornada9Visible && (
+            <div style={{ textAlign: 'center', marginBottom: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            {renderImages(['/jor9.jpeg'], 'C')}
+          </div>
+          
+          )}
+        </div>
+
+        <div style={{ marginBottom: '20px' }}>
+          <h3
+            style={{ textAlign: 'center', margin: '30px 0', cursor: 'pointer', backgroundColor: '#777', color: 'white', padding: '8px', borderRadius: '10px' }}
+            onClick={() => setJornada8Visible(!jornada8Visible)}
+          >
+            Jornada 8 {jornada8Visible ? '▼' : '►'}
+          </h3>
+          {jornada8Visible && (
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+              {pairingsChunksJornada8.map((pairingsGroup, groupIndex) => (
+                renderPairingTable(pairingsGroup, groupIndex)
+              ))}
+            </div>
+          )}
+          {jornada8Visible && (
+            <div style={{ textAlign: 'center', marginBottom: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            {renderImages(['/jor8.jpeg'], 'B')}
+            </div>
+          )}
+        </div>
+
+        <div style={{ marginBottom: '20px' }}>
+          <h3
+            style={{ textAlign: 'center', margin: '30px 0', cursor: 'pointer', backgroundColor: '#777', color: 'white', padding: '8px', borderRadius: '10px' }}
+            onClick={() => setJornada7Visible(!jornada7Visible)}
+          >
+            Jornada 7 {jornada7Visible ? '▼' : '►'}
+          </h3>
+          {jornada7Visible && (
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+              {pairingsChunksJornada7.map((pairingsGroup, groupIndex) => (
+                renderPairingTable(pairingsGroup, groupIndex)
+              ))}
+            </div>
+          )}
+          {jornada7Visible && (
+            <div style={{ textAlign: 'center', marginBottom: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            {renderImages(['/jor7.jpeg'], 'A')}
+            </div>
+          )}
         </div>
 
         <div style={{ marginBottom: '20px' }}>
