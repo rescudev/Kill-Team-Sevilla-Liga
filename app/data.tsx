@@ -109,7 +109,7 @@ const jornada3 = [
 
 const jornada4 = [
   { jugador1: 'JOSEMA', jugador2: 'ANTONIO', puntos1: 0, puntos2: 0 },
-  { jugador1: 'JUDIT', jugador2: 'JAVI', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JUDIT', jugador2: 'JAVI', puntos1: 14, puntos2: 15 },
   { jugador1: 'JUANJO', jugador2: 'LUISMI', puntos1: 0, puntos2: 0 },
   { jugador1: 'KRYS', jugador2: 'RAFA E', puntos1: 16, puntos2: 10 },
   { jugador1: 'LUCAS', jugador2: 'PEDRO', puntos1: 19, puntos2: 9 },
@@ -155,7 +155,7 @@ const jornada8 = [
   { jugador1: 'JOSEMA', jugador2: 'JUDIT', puntos1: 0, puntos2: 0 },
   { jugador1: 'FERNANDO', jugador2: 'JUANJO', puntos1: 0, puntos2: 0 },
   { jugador1: 'IVÁN', jugador2: 'ALFONSO', puntos1: 0, puntos2: 0 },
-  { jugador1: 'KRYS', jugador2: 'JAVI', puntos1: 0, puntos2: 0 },
+  { jugador1: 'KRYS', jugador2: 'JAVI', puntos1: 17, puntos2: 13 },
   { jugador1: 'JESÚS', jugador2: 'RAFA E', puntos1: 10, puntos2: 20 },
   { jugador1: 'LUCAS', jugador2: 'RAFA M', puntos1: 17, puntos2: 15 },
   { jugador1: 'ANTONIO', jugador2: 'LUISMI', puntos1: 0, puntos2: 0 },
