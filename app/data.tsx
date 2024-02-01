@@ -148,7 +148,7 @@ const jornada7 = [
   { jugador1: 'LUCAS', jugador2: 'JAVI', puntos1: 18, puntos2: 13 },
   { jugador1: 'RAFA M', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
   { jugador1: 'ANTONIO', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
-  { jugador1: 'PEDRO', jugador2: 'ALFONSO', puntos1: 0, puntos2: 0 },
+  { jugador1: 'PEDRO', jugador2: 'ALFONSO', puntos1: 10, puntos2: 15 },
 ];
 
 const jornada8 = [
