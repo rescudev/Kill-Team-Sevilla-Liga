@@ -97,7 +97,7 @@ const jornada2 = [
 ];
 
 const jornada3 = [
-  { jugador1: 'JOSEMA', jugador2: 'JUANJO', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JOSEMA', jugador2: 'JUANJO', puntos1: 13, puntos2: 0 },
   { jugador1: 'KRYS', jugador2: 'LUCAS', puntos1: 13, puntos2: 19 },
   { jugador1: 'FERNANDO', jugador2: 'JUDIT', puntos1: 16, puntos2: 12 },
   { jugador1: 'JESÚS', jugador2: 'LUISMI', puntos1: 12, puntos2: 9 },
