@@ -103,38 +103,38 @@ const jornada3 = [
   { jugador1: 'JESÚS', jugador2: 'LUISMI', puntos1: 12, puntos2: 9 },
   { jugador1: 'RAFA M', jugador2: 'RAFA E', puntos1: 20, puntos2: 11 },
   { jugador1: 'ANTONIO', jugador2: 'PEDRO', puntos1: 0, puntos2: 0 },
-  { jugador1: 'ALFONSO', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
+  { jugador1: 'ALFONSO', jugador2: 'MIGUEL', puntos1: 13, puntos2: 0 },
   { jugador1: 'JAVI', jugador2: 'IVÁN', puntos1: 20, puntos2: 9 },
 ];
 
 const jornada4 = [
   { jugador1: 'JOSEMA', jugador2: 'ANTONIO', puntos1: 0, puntos2: 0 },
   { jugador1: 'JUDIT', jugador2: 'JAVI', puntos1: 14, puntos2: 15 },
-  { jugador1: 'JUANJO', jugador2: 'LUISMI', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JUANJO', jugador2: 'LUISMI', puntos1: 13, puntos2: 0 },
   { jugador1: 'KRYS', jugador2: 'RAFA E', puntos1: 16, puntos2: 10 },
   { jugador1: 'LUCAS', jugador2: 'PEDRO', puntos1: 19, puntos2: 9 },
-  { jugador1: 'FERNANDO', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
-  { jugador1: 'JESÚS', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
+  { jugador1: 'FERNANDO', jugador2: 'MIGUEL', puntos1: 0, puntos2: 13 },
+  { jugador1: 'JESÚS', jugador2: 'IVÁN', puntos1: 13, puntos2: 0 },
   { jugador1: 'RAFA M', jugador2: 'ALFONSO', puntos1: 12, puntos2: 16 },
 ];
 
 const jornada5 = [
   { jugador1: 'JOSEMA', jugador2: 'LUCAS', puntos1: 17, puntos2: 13 },
   { jugador1: 'JUDIT', jugador2: 'PEDRO', puntos1: 14, puntos2: 7 },
-  { jugador1: 'JUANJO', jugador2: 'RAFA E', puntos1: 0, puntos2: 0 },
-  { jugador1: 'LUISMI', jugador2: 'RAFA M', puntos1: 0, puntos2: 0 },
-  { jugador1: 'KRYS', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
-  { jugador1: 'FERNANDO', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JUANJO', jugador2: 'RAFA E', puntos1: 0, puntos2: 13 },
+  { jugador1: 'LUISMI', jugador2: 'RAFA M', puntos1: 0, puntos2: 13 },
+  { jugador1: 'KRYS', jugador2: 'MIGUEL', puntos1: 13, puntos2: 0 },
+  { jugador1: 'FERNANDO', jugador2: 'IVÁN', puntos1: 13, puntos2: 0 },
   { jugador1: 'JESÚS', jugador2: 'JAVI', puntos1: 19, puntos2: 11 },
   { jugador1: 'ALFONSO', jugador2: 'ANTONIO', puntos1: 18, puntos2: 10 },
 ];
 
 const jornada6 = [
   { jugador1: 'JOSEMA', jugador2: 'LUISMI', puntos1: 19, puntos2: 13 },
-  { jugador1: 'LUCAS', jugador2: 'JUDIT', puntos1: 0, puntos2: 0 },
+  { jugador1: 'LUCAS', jugador2: 'JUDIT', puntos1: 13, puntos2: 0 },
   { jugador1: 'RAFA M', jugador2: 'PEDRO', puntos1: 17, puntos2: 16 },
-  { jugador1: 'JUANJO', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
-  { jugador1: 'KRYS', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JUANJO', jugador2: 'MIGUEL', puntos1: 13, puntos2: 0 },
+  { jugador1: 'KRYS', jugador2: 'IVÁN', puntos1: 13, puntos2: 0 },
   { jugador1: 'FERNANDO', jugador2: 'JAVI', puntos1: 16, puntos2: 14 },
   { jugador1: 'JESÚS', jugador2: 'ALFONSO', puntos1: 9, puntos2: 16 },
   { jugador1: 'RAFA E', jugador2: 'ANTONIO', puntos1: 19, puntos2: 16 },
@@ -143,34 +143,34 @@ const jornada6 = [
 const jornada7 = [
   { jugador1: 'JOSEMA', jugador2: 'RAFA E', puntos1: 11, puntos2: 18 },
   { jugador1: 'FERNANDO', jugador2: 'KRYS', puntos1: 6, puntos2: 20 },
-  { jugador1: 'JUANJO', jugador2: 'JESÚS', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JUANJO', jugador2: 'JESÚS', puntos1: 0, puntos2: 13 },
   { jugador1: 'JUDIT', jugador2: 'LUISMI', puntos1: 12, puntos2: 12 },
   { jugador1: 'LUCAS', jugador2: 'JAVI', puntos1: 18, puntos2: 13 },
-  { jugador1: 'RAFA M', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
-  { jugador1: 'ANTONIO', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
+  { jugador1: 'RAFA M', jugador2: 'IVÁN', puntos1: 13, puntos2: 0 },
+  { jugador1: 'ANTONIO', jugador2: 'MIGUEL', puntos1: 13, puntos2: 0 },
   { jugador1: 'PEDRO', jugador2: 'ALFONSO', puntos1: 10, puntos2: 15 },
 ];
 
 const jornada8 = [
-  { jugador1: 'JOSEMA', jugador2: 'JUDIT', puntos1: 0, puntos2: 0 },
-  { jugador1: 'FERNANDO', jugador2: 'JUANJO', puntos1: 0, puntos2: 0 },
-  { jugador1: 'IVÁN', jugador2: 'ALFONSO', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JOSEMA', jugador2: 'JUDIT', puntos1: 19, puntos2: 14 },
+  { jugador1: 'FERNANDO', jugador2: 'JUANJO', puntos1: 13, puntos2: 0 },
+  { jugador1: 'IVÁN', jugador2: 'ALFONSO', puntos1: 0, puntos2: 13 },
   { jugador1: 'KRYS', jugador2: 'JAVI', puntos1: 17, puntos2: 13 },
   { jugador1: 'JESÚS', jugador2: 'RAFA E', puntos1: 10, puntos2: 20 },
   { jugador1: 'LUCAS', jugador2: 'RAFA M', puntos1: 17, puntos2: 15 },
   { jugador1: 'ANTONIO', jugador2: 'LUISMI', puntos1: 0, puntos2: 0 },
-  { jugador1: 'PEDRO', jugador2: 'MIGUEL', puntos1: 0, puntos2: 0 },
+  { jugador1: 'PEDRO', jugador2: 'MIGUEL', puntos1: 13, puntos2: 0 },
 ];
 
 const jornada9 = [
   { jugador1: 'JOSEMA', jugador2: 'JESÚS', puntos1: 19, puntos2: 10 },
-  { jugador1: 'FERNANDO', jugador2: 'RAFA M', puntos1: 0, puntos2: 0 },
+  { jugador1: 'FERNANDO', jugador2: 'RAFA M', puntos1: 0, puntos2: 13 },
   { jugador1: 'RAFA E', jugador2: 'JAVI', puntos1: 0, puntos2: 0 },
-  { jugador1: 'JUANJO', jugador2: 'KRYS', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JUANJO', jugador2: 'KRYS', puntos1: 0, puntos2: 13 },
   { jugador1: 'LUCAS', jugador2: 'ALFONSO', puntos1: 21, puntos2: 7 },
   { jugador1: 'LUISMI', jugador2: 'PEDRO', puntos1: 0, puntos2: 0 },
-  { jugador1: 'ANTONIO', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
-  { jugador1: 'MIGUEL', jugador2: 'JUDIT', puntos1: 0, puntos2: 0 },
+  { jugador1: 'ANTONIO', jugador2: 'IVÁN', puntos1: 13, puntos2: 0 },
+  { jugador1: 'MIGUEL', jugador2: 'JUDIT', puntos1: 0, puntos2: 13 },
 ];
 
 // Example usage for multiple jornadas
