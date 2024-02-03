@@ -165,7 +165,7 @@ const jornada8 = [
 const jornada9 = [
   { jugador1: 'JOSEMA', jugador2: 'JESÚS', puntos1: 19, puntos2: 10 },
   { jugador1: 'FERNANDO', jugador2: 'RAFA M', puntos1: 0, puntos2: 13 },
-  { jugador1: 'RAFA E', jugador2: 'JAVI', puntos1: 0, puntos2: 0 },
+  { jugador1: 'RAFA E', jugador2: 'JAVI', puntos1: 13, puntos2: 19 },
   { jugador1: 'JUANJO', jugador2: 'KRYS', puntos1: 0, puntos2: 13 },
   { jugador1: 'LUCAS', jugador2: 'ALFONSO', puntos1: 21, puntos2: 7 },
   { jugador1: 'LUISMI', jugador2: 'PEDRO', puntos1: 1, puntos2: 1 },
