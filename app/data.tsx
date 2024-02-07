@@ -108,7 +108,7 @@ const jornada3 = [
 ];
 
 const jornada4 = [
-  { jugador1: 'JOSEMA', jugador2: 'ANTONIO', puntos1: 0, puntos2: 0 },
+  { jugador1: 'JOSEMA', jugador2: 'ANTONIO', puntos1: 20, puntos2: 13 },
   { jugador1: 'JUDIT', jugador2: 'JAVI', puntos1: 14, puntos2: 15 },
   { jugador1: 'JUANJO', jugador2: 'LUISMI', puntos1: 13, puntos2: 0 },
   { jugador1: 'KRYS', jugador2: 'RAFA E', puntos1: 16, puntos2: 10 },
@@ -173,6 +173,17 @@ const jornada9 = [
   { jugador1: 'MIGUEL', jugador2: 'JUDIT', puntos1: 0, puntos2: 13 },
 ];
 
+const jornada10 = [
+  { jugador1: 'JOSEMA', jugador2: 'JESÚS', puntos1: 0, puntos2: 0 },
+  { jugador1: 'FERNANDO', jugador2: 'JUANJO', puntos1: 0, puntos2: 0 },
+  { jugador1: 'RAFA E', jugador2: 'JAVI', puntos1: 0, puntos2: 0 },
+  { jugador1: 'ALFONSO', jugador2: 'KRYS', puntos1: 13, puntos2: 20 },
+  { jugador1: 'LUCAS', jugador2: 'RAFA M', puntos1: 21, puntos2: 10 },
+  { jugador1: 'LUISMI', jugador2: 'PEDRO', puntos1: 0, puntos2: 0 },
+  { jugador1: 'ANTONIO', jugador2: 'IVÁN', puntos1: 0, puntos2: 0 },
+  { jugador1: 'MIGUEL', jugador2: 'JUDIT', puntos1: 0, puntos2: 0 },
+];
+
 // Example usage for multiple jornadas
 const leagueData = calculatePoints([
   jornada1,
@@ -183,7 +194,8 @@ const leagueData = calculatePoints([
   jornada6,
   jornada7,
   jornada8,
-  jornada9
+  jornada9,
+  jornada10
 ]);
 
 export {
